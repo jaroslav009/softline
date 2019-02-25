@@ -1,0 +1,62 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@import "home"
+
+
+.logo
+	border-right: 1px solid rgba(#000, .1)
+	padding-right: 23px
+	margin-left: 23px
+
+.header
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	margin-top: 25px
+	font-family: RobotoRegular, sans-serif
+.header__logo-menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.head-menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin: 0
+	padding: 0
+	li 
+		list-style-type: none
+		padding-right: 23px
+		margin-left: 23px
+		border-right: 1px solid rgba(#000, .1)
+		list-style-type: none
+		a 
+			color: #000
+.button
+	background-color: #0076FF
+	padding: 5px 20px
+	color: #fff
+	border: none
+	border-radius: 5px
+	cursor: pointer
+.single-item 
+	height: 800px
+	.slick-list
+		height: 100%
+		.slick-track
+			height: 100%
+
+.container-wrapper
+	padding: 10px
+@import "media" // Always at the end
