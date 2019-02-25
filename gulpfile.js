@@ -1,6 +1,6 @@
 var syntax        = 'sass', // Syntax: sass or scss;
 		gulpversion   = '4'; // Gulp version: 3 or 4
-
+var css_syntax = 'css';
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
@@ -79,6 +79,7 @@ if (gulpversion == 3) {
 if (gulpversion == 4) {
 	gulp.task('watch', function() {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
+		gulp.watch('app/'+syntax+'/**/*.css', gulp.parallel('styles'));
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch('app/*.html', gulp.parallel('code'))
 	});
