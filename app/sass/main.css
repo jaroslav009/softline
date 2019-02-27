@@ -54,14 +54,9 @@
   height: 20px;
   content: '•';
   text-align: center;
-  
   color: #c1c1c1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
- 
-
-   
 }
 
 .my-dots li.slick-active button:before {
@@ -69,18 +64,18 @@
   color: #0076ff;
 }
 .slick-arrow{
-	cursor: pointer;
+  cursor: pointer;
 }
 .centered{
-	text-align: center;
-	    width: 33%;
+  text-align: center;
+      width: 33%;
     margin: 0 auto;
 
 }
 .centered span{
-	
-	font-size: 35px !important;
-	font-weight: 700;
+  
+  font-size: 35px !important;
+  font-weight: 700;
 }
 .centered_link{
   text-align: center;

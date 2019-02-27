@@ -2,14 +2,14 @@
 @import "fonts"
 @import "libs"
 
-@import "main.css"
+
 @import "home"
 @import "news"
 @import "projects"
 @import "busines"
 @import "solutions"
 @import "about"
-
+@import "main.css"
 body 
 	font-family: RobotoRegular, sans-serif
 
@@ -218,4 +218,151 @@ a.active
 .apple__service_h1
 	text-align: center
 	font-size: 35px
+.bgw
+	background-color: #fff
+	padding-top: 50px
+.softline_service
+	background: url('/img/LATER.png') center center no-repeat
+	background-size: cover
+	height: 1500px
+
+h1.service__softlaine_title
+	width: 50%
+	font-size: 40px
+	padding-top: 5%
+    
+.service__softline_list h1
+	font-weight: 500
+	font-size: 31px  
+.service__softline_list div
+	padding-bottom: 40px
+
+.order
+	height: 500px
+
+.order__container
+	width: 50%
+	margin: 0 auto
+	padding-top: 15%
+
+.order__container_title
+	display: block
+	padding-bottom: 10%
+	font-weight: 500
+.pull-right
+	float: right
+.button_no_bg
+	background-color: transparent
+	padding: 5px 20px
+	color: #0076ff
+	border: none
+	border-radius: 5px
+	cursor: pointer
+.video
+	padding-top: 20px
+.video-container
+	background: url('/img/bus-2.png') 0% 5% no-repeat
+	background-size: auto
+
+
+
+.overlay
+  opacity: 1
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+
+.video-container_title
+	color: #fff
+	font-weight: 400
+	text-align: center
+	padding-top: 5%
+	font-size: 31px
+.video-container_watch
+	text-align: center
+	padding-bottom: 120px
+.video-container_video
+	margin: 0 auto
+	color: #fff
+.video-container_watch a
+	color: #fff
+	text-decoration: none
+.modal-header
+	border-bottom: none
+.modal-title
+	text-align: center
+.modal-body
+	width: 90%
+	margin: 0 auto
+.form-group input
+	border-top: 0
+    border-left: 0
+    border-right: 0
+    border-bottom: 1px solid #f1f1f1
+    border-radius: 0px
+
+.my-dots
+  position: absolute
+  bottom: -11px
+  display: block
+  width: 100%
+  padding: 0
+  list-style: none
+  text-align: center
+  li
+    position: relative
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin: 0 5px
+    padding: 0
+    cursor: pointer
+    button
+      font-size: 0
+      line-height: 0
+      display: block
+      width: 20px
+      height: 20px
+      padding: 5px
+      cursor: pointer
+      color: transparent
+      border: 0
+      outline: none
+      background: transparent
+      &:hover, &:focus
+        outline: none
+      &:hover:before, &:focus:before
+        opacity: 1
+      &:before
+        font-family: 'slick'
+        font-size: 40px
+        line-height: 20px
+        position: absolute
+        top: 0
+        left: 0
+        width: 20px
+        height: 20px
+        content: '•'
+        text-align: center
+        color: #c1c1c1
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+    &.slick-active button:before
+      opacity: .75
+      color: #0076ff
+
+.slick-arrow
+  cursor: pointer
+
+.centered
+  text-align: center
+  width: 33%
+  margin: 0 auto
+  span
+    font-size: 35px !important
+    font-weight: 700
+
+.centered_link
+  text-align: center
+  margin-top: 15px
 @import "media" // Always at the end
