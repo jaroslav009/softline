@@ -1,1 +1,88 @@
 /*   Изменяй!!!!  */
+.my-dots {
+  position: absolute;
+  bottom: -11px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 40px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  
+  color: #c1c1c1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+ 
+
+   
+}
+
+.my-dots li.slick-active button:before {
+  opacity: .75;
+  color: #0076ff;
+}
+.slick-arrow{
+	cursor: pointer;
+}
+.centered{
+	text-align: center;
+	    width: 33%;
+    margin: 0 auto;
+
+}
+.centered span{
+	
+	font-size: 35px !important;
+	font-weight: 700;
+}
+.centered_link{
+  text-align: center;
+  margin-top: 15px;
+}
