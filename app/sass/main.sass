@@ -7,6 +7,8 @@
 @import "news"
 @import "projects"
 @import "busines"
+@import "solutions"
+@import "about"
 
 body 
 	font-family: RobotoRegular, sans-serif
@@ -72,7 +74,7 @@ body
 			background-color: #fff
 .button
 	background-color: #0076FF
-	padding: 5px 20px
+	padding: 10px 20px
 	color: #fff
 	border: none
 	border-radius: 5px
@@ -126,6 +128,20 @@ body
 		li 
 			a
 				color: #fff
+
+.sub-header 
+	ul 
+		li
+			position: relative
+			&:after
+				content: ''
+				width: 10px
+				height: 40px
+				border-right: 1px solid rgba(0,0,0,.2)
+				position: absolute
+				right: 0
+				top: 10%
+
 
 
 @import "media" // Always at the end
