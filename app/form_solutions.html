@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div class="container-wrapper">
+
+<div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<h5 class="modal-title" id="exampleModalLabel">Воспользуйтесь консультацией наших экспертов по выбору решений под ваши задачи</h5>
+        <form>
+          <div class="form-group">
+           
+            <!-- <select class="form-control" id="exampleFormControlSelect1"">
+              <option class="item-form-control" value="" disabled selected>Отрасль</option>
+              <option class="item-form-control">Ритейл</option>
+              <option class="item-form-control">Промышленность</option>
+              <option class="item-form-control">Банки и страховые организации</option>
+              <option class="item-form-control">Топливно-энергетические компании</option>
+              <option class="item-form-control">Телеком</option>
+              <option class="item-form-control">Образование</option>
+              <option class="item-form-control">Логистика</option>
+              <option class="item-form-control">Услуги</option>
+            </select> -->
+          </div>
+          <div class="form-group">
+             
+             <div class="select">
+           <!-- <select class="form-control" name="exampleFormControlSelect2" id="exampleFormControlSelect2"  >
+            <option value="" disabled selected>Типовые задачи для мобильной автоматизации</option>
+              <option>Аудит площадки / оборудования </option>
+              <option>Аудит охраны труда и техники безопасности</option>
+              <option>Мобильные POS-терминалы</option>
+              <option>Инвентаризация</option>
+              <option>Динамическая отчетность</option>
+              <option>Антерактивные презентации</option>
+              <option>Совместная работа над проектом</option>
+              
+           </select> -->
+
+           <select class="form-control" name="number" id="number">
+              <option class="item-form-control" value="" disabled selected>Отрасль</option>
+              <option class="item-form-control">Ритейл</option>
+              <option class="item-form-control">Промышленность</option>
+              <option class="item-form-control">Банки и страховые организации</option>
+              <option class="item-form-control">Топливно-энергетические компании</option>
+              <option class="item-form-control">Телеком</option>
+              <option class="item-form-control">Образование</option>
+              <option class="item-form-control">Логистика</option>
+              <option class="item-form-control">Услуги</option>
+            </select>
+
+            <select class="form-control" name="number-2" id="number-2">
+              <option>Аудит площадки / оборудования </option>
+              <option>Аудит охраны труда и техники безопасности</option>
+              <option>Мобильные POS-терминалы</option>
+              <option>Инвентаризация</option>
+              <option>Динамическая отчетность</option>
+              <option>Антерактивные презентации</option>
+              <option>Совместная работа над проектом</option>
+            </select>
+           </div>
+          </div>
+           <div class="form-group">
+             <label class="label-customize phone" for="recipient-phone">Телефон</label>
+           <input type="text" class="form-control" id="recipient-phone" placeholder="Телефон">
+          </div>
+           <div class="form-group">
+             <label class="label-customize email" for="recipient-email" >e-mail</label>
+           <input type="text" class="form-control" id="recipient-email" placeholder="e-mail" required>
+          </div>
+          <div class="form-group">
+           <label class="label-customize company" for="recipient-company" >Компания</label>
+            <input type="text" class="form-control" id="recipient-company" placeholder="Компания" required>
+          </div>
+          <div class="form-group">
+           <label class="label-customize name" for="recipient-name">ФИО</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="ФИО" required>
+          </div>
+          
+            <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="Check1">
+    <label class="form-check-label" for="Check1">Даю <a href="#">согласие на обработку персональных данных</a></label>
+  </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" type="submit" class="button btn-send">Отправить</button>
+      </div>
+    </div>
+
+	</div>
+
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/masked-input/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>
