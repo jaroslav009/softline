@@ -10,14 +10,38 @@
 @import "solutions"
 @import "about"
 @import "main.css"
+
 body 
 	font-family: RobotoRegular, sans-serif
+	background-color: #F7F7F7
 
-.logo
-	border-right: 1px solid rgba(#000, .1)
-	padding-right: 23px
-	margin-left: 23px
-
+.logo 
+	margin-right: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	text-decoration: none !important
+	color: #000 !important
+	align-items: center
+	img 
+		align-items: center
+		margin-right: 20px
+	div 
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		img
+			margin-right: 8px
+			width: 100px
+			width: 100px
+		span
+			line-height: 10px !important
+			font-size: 11px
 .header
 	display: -webkit-flex
 	display: -moz-flex
@@ -25,17 +49,23 @@ body
 	display: -o-flex
 	display: flex
 	flex-direction: row
-	justify-content: space-around
+	justify-content: space-between
 	margin-top: 25px
 	font-family: RobotoRegular, sans-serif
-	border-bottom: 1px solid rgba(0,0,0, .1)
+	border-bottom: 2px solid rgba(0,0,0, .1)
 	padding-bottom: 25px
+	padding-left: 30px
+	padding-right: 30px
+	margin-bottom: 11px
+	.button 
+		margin-left: 25px
 .header__logo-menu
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
+	flex: 2 1 auto
 
 .head-menu
 	display: -webkit-flex
@@ -45,15 +75,37 @@ body
 	display: flex
 	margin: 0
 	padding: 0
+	flex: 1
+	width: 100%
 	li 
 		list-style-type: none
-		padding-right: 23px
-		padding-left: 23px
-		border-right: 1px solid rgba(#000, .1)
+		border-right: 2px solid rgba(#000, .1)
 		list-style-type: none
 		position: relative
+		text-decoration: none
+		flex-basis: 100%
+		text-align: center
+		&:first-child
+			border-left: 2px solid rgba(#000, .1)
 		a 
 			color: #000
+			text-decoration: none
+			padding-top: 10px
+	a 
+		list-style-type: none
+		border-right: 2px solid rgba(#000, .1)
+		list-style-type: none
+		position: relative
+		text-decoration: none
+		flex-basis: 100%
+		text-align: center
+		color: #000
+		text-decoration: none
+		border-bottom: none !important
+		vertical-align: middle
+		padding-top: 11px
+		&:first-child
+			border-left: 2px solid rgba(#000, .1)
 	.active
 		&::after
 			content: ''
@@ -117,7 +169,7 @@ body
 		color: #000
 
 .quote
-	padding-left: 27px
+	padding-left: 50px
 	border-left: 2px solid #000
 	font-size: 25px
 	font-weight: bold
@@ -137,10 +189,46 @@ body
 				content: ''
 				width: 10px
 				height: 40px
-				border-right: 1px solid rgba(0,0,0,.2)
+				border-right: 2px solid rgba(0,0,0,.2)
 				position: absolute
 				right: 0
 				top: 10%
+	div
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		a 
+			position: relative
+			padding-right: 47px
+			list-style-type: none
+			width: 15%	
+			// border-right: 1px solid rgba(0,0,0,.2)
+			text-align: center
+			padding: 15px 0
+			margin-top: 23px
+			color: #000
+			text-decoration: none
+			flex-basis: 100%
+			min-height: 130px
+			padding: 0 15px
+			margin: 0
+			display: flex
+			align-items: center
+			justify-content: center
+			&:after
+				content: ''
+				width: 10px
+				height: 50%
+				border-right: 2px solid rgba(0,0,0,.2)
+				position: absolute
+				right: 0
+				top: 30%
+			&:last-child
+				&:after
+					border: none
 
 .slick-arrow 
 	top: 5%
@@ -432,6 +520,18 @@ h1.service__softlaine_title
 	border-bottom: 1px solid #f1f1f1
 
 .ui-menu-item
-	border-bottom: 1px solid #f1f1f1
+	border-bottom: 1px solid #f1f1f1	
 
+.header-white
+	padding-top: 25px !important
+	.head-menu 
+		a
+			color: #fff  
+			border-right: 1px solid rgba(255,255,255,.2)
+			&:first-child
+				border-left: 1px solid rgba(255,255,255,.2)
+
+.header-white
+	.head-menu .active::after
+		background-color: #fff
 @import "media" // Always at the end
