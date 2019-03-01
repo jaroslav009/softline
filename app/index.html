@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #fff;">
 	
 	<header class="header">
 		<a href="/" class="logo">
@@ -37,14 +37,26 @@
 			</div>
 		</a>
 		<div class="head-menu">
-			<a href="#" class="active">Для бизнеса</a>
-			<a href="#">Apple как сервис</a>
+			<a href="#">Для бизнеса</a>
+			<a href="/apple_as_service.html">Apple как сервис</a>
 			<a href="/solutions-main.html">Решения</a>
 			<a href="/projects.html">Проекты</a>
 			<a href="/news.html">Новости</a>
 			<a href="/about.html">О нас</a>
+			<button class="button mobile-buy button-hamburger">Заказать</button>
 		</div>
-		<button class="button">Заказать</button>
+		<button class="button desktop-buy">Заказать</button>
+		<div class="mobile-header">
+			<a href="#" class="mobile-buy">
+				<img src="img/buy-image.svg" alt="">
+			</a>
+			<!-- Hamburger -->
+			<button class="hamburger hamburger--slider" type="button" id="hamburger-menu">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>
+		</div>
 	</header>
 	<div class="container-wrapper">
 		<section class="first-section">
@@ -89,10 +101,12 @@
 					<section class="second-section">
 				<div class="container-wrapper pt-0">
 				<div class="row">
-					<div class="col-md-4 first pt-2">
-
+					<div class="col-md-4 first pt-4 pb-3">
+							
 						<span class="title-services">Мероприятия</span>
 						<img src="img/calendar.png" alt="" class="img-services">
+						
+						<div class="correct_postition">
 						<div class="date">
 						<span class="date_exactly">26/09</span>
 						</div>
@@ -102,11 +116,12 @@
 						<div class="services__link">
 						<a href="#" class="services__link_item">Регистрация <i class="fas fa-angle-right"></i></a>
 						</div>
+						</div>
 					</div>
-					<div class="col-md-4 second pt-2">
+					<div class="col-md-4 second pt-4 pb-3">
 						<span class="title-services">Подбери решения</span>
 						<img src="img/mpbile-desktop.png" alt="" class="img-services">
-						
+						<div class="correct_postition">
 						<div class="services__description without-date">
 						<p class="services__description_item">Есть задачи корпоративной мобильности?</p>
 						</div>
@@ -118,9 +133,11 @@
 						<a href="#" class="services__link_item">Подробнее </a>
 						</div>
 					</div>
-					<div class="col-md-4 third pt-2">
+					</div>
+					<div class="col-md-4 third pt-4 pb-3">
 						<span class="title-services">Новости</span>
 						<img src="img/calendar.png" alt="" class="img-services">
+						<div class="correct_postition">
 						<div class="services__description without-date">
 						<p class="services__description_item">Softline создала для "Высшей Школы Экономики" высокотехнологичные классы на базе Apple</p>
 						</div>
@@ -132,12 +149,13 @@
 						</div>
 					</div>
 				</div>
+			</div>
 				<div class="row">
-					<div class="col-md-4 fourth pt-2">
+					<div class="col-md-4 fourth pt-4 pb-3">
 
 						<span class="title-services">Возьми в аренду</span>
 						<img src="img/calendar.png" alt="" class="img-services">
-						
+						<div class="correct_postition">
 						<div class="services__description">
 						<p class="services__description_item without-date">Нужны устройства Apple для компании?</p>
 						</div>
@@ -148,9 +166,11 @@
 						<a href="#" class="services__link_item">Рассчитать</a>
 						</div>
 					</div>
-					<div class="col-md-4 fifth pt-2">
+				</div>
+					<div class="col-md-4 fifth pt-4 pb-3">
 						<span class="title-services">Мероприятие</span>
 						<img src="img/mpbile-desktop.png" alt="" class="img-services">
+						<div class="correct_postition">
 						<div class="date">
 						<span class="date_exactly">26/09</span>
 						</div>
@@ -164,9 +184,11 @@
 						<a href="#" class="services__link_item">Регистрация<i class="fas fa-angle-right"></i> </a>
 						</div>
 					</div>
-					<div class="col-md-4 pt-2">
+					</div>
+					<div class="col-md-4 pt-4 pb-3">
 						<span class="title-services">Проект</span>
 						<img src="img/calendar.png" alt="" class="img-services">
+						<div class="correct_postition">
 						<div class="services__description without-date">
 						<p class="services__description_item">Mac в Высшей школе экономики</p>
 						</div>
@@ -178,6 +200,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 				</div>
 			</section>
 

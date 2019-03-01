@@ -27,9 +27,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
-<body class="news-body">
+<body class="news-body" style="background-color: #fff;">
 	
-	<header class="header" style="background-color: #F7F7F7;">
+	<header class="header">
 		<a href="/" class="logo">
 			<img src="img/logo-new.png" alt="SoftLine">
 			<div>
@@ -37,67 +37,82 @@
 			</div>
 		</a>
 		<div class="head-menu">
-			<a href="/busines.html">Для бизнеса</a>
+			<a href="#">Для бизнеса</a>
 			<a href="/apple_as_service.html">Apple как сервис</a>
 			<a href="/solutions-main.html">Решения</a>
 			<a href="/projects.html">Проекты</a>
 			<a class="active" href="/news.html">Новости</a>
 			<a href="/about.html">О нас</a>
+			<button class="button mobile-buy button-hamburger">Заказать</button>
 		</div>
-		<button class="button">Заказать</button>
+		<button class="button desktop-buy">Заказать</button>
+		<div class="mobile-header">
+			<a href="#" class="mobile-buy">
+				<img src="img/buy-image.svg" alt="">
+			</a>
+			<!-- Hamburger -->
+			<button class="hamburger hamburger--slider" type="button" id="hamburger-menu">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>
+		</div>
 	</header>
 	<div class="container-wrapper-news">
 		<section class="s-title">
 			<h2>Новости</h2>
 		</section>
+
 		<section class="s-news">
-			<div class="s-news-items">
-				<a href="full-news.html" class="news-item">
-					<h2>На что способен телефон за 130 тысяч рублей: обзор iPhone Xs Max</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
-				<a href="full-news.html" class="news-item">
-					<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
-				<a href="full-news.html" class="news-item">
-					<h2>Эс — как доллар</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
+			<div class="twice-news">
+				<div class="s-news-items twice-news-items">
+					<a href="full-news.html" class="news-item">
+						<h2>На что способен телефон за 130 тысяч рублей: обзор iPhone Xs Max</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+					<a href="full-news.html" class="news-item">
+						<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+					<a href="full-news.html" class="news-item">
+						<h2>Эс — как доллар</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+				</div>
+				<div class="s-news-items twice-news-items">
+					<a href="full-news.html" class="news-item">
+						<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+					<a href="full-news.html" class="news-item">
+						<h2>Менее чем за месяц до планируемой презентации Apple зарегистрировала в Евразийской экономической комиссии новые Apple Watch.</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+					<a href="full-news.html" class="news-item">
+						<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
+						<div class="news-date-arrow">
+							<span class="date">23 сентября 2018</span>
+							<img src="img/arrow-right.png" alt="arrow right">
+						</div>
+					</a>
+				</div>
 			</div>
-			<div class="s-news-items">
-				<a href="full-news.html" class="news-item">
-					<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
-				<a href="full-news.html" class="news-item">
-					<h2>Менее чем за месяц до планируемой презентации Apple зарегистрировала в Евразийской экономической комиссии новые Apple Watch.</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
-				<a href="full-news.html" class="news-item">
-					<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
-					<div class="news-date-arrow">
-						<span class="date">23 сентября 2018</span>
-						<img src="img/arrow-right.png" alt="arrow right">
-					</div>
-				</a>
-			</div>
-			<div class="s-news-items">
+			<div class="s-news-items news-last-item">
 				<a href="full-news.html" class="news-item">
 					<h2>Пользователей iOS разводят мошенники из «AppleCare»</h2>
 					<div class="news-date-arrow">

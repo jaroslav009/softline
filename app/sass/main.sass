@@ -50,13 +50,13 @@ body
 	display: flex
 	flex-direction: row
 	justify-content: space-between
-	margin-top: 25px
 	font-family: RobotoRegular, sans-serif
 	border-bottom: 2px solid rgba(0,0,0, .1)
-	padding-bottom: 25px
 	padding-left: 30px
 	padding-right: 30px
-	margin-bottom: 11px
+	padding-top: 28px
+	padding-bottom: 28px
+	align-items: center
 	.button 
 		margin-left: 25px
 .header__logo-menu
@@ -77,23 +77,9 @@ body
 	padding: 0
 	flex: 1
 	width: 100%
-	li 
-		list-style-type: none
-		border-right: 2px solid rgba(#000, .1)
-		list-style-type: none
-		position: relative
-		text-decoration: none
-		flex-basis: 100%
-		text-align: center
-		&:first-child
-			border-left: 2px solid rgba(#000, .1)
-		a 
-			color: #000
-			text-decoration: none
-			padding-top: 10px
 	a 
 		list-style-type: none
-		border-right: 2px solid rgba(#000, .1)
+		border-right: 1px solid rgba(#000, .1)
 		list-style-type: none
 		position: relative
 		text-decoration: none
@@ -103,16 +89,15 @@ body
 		text-decoration: none
 		border-bottom: none !important
 		vertical-align: middle
-		padding-top: 11px
 		&:first-child
-			border-left: 2px solid rgba(#000, .1)
+			border-left: 1px solid rgba(#000, .1)
 	.active
 		&::after
 			content: ''
 			width: 100%
 			height: 2px
 			left: 0
-			top: -24px
+			top: -38px
 			position: absolute
 			background-color: #333
 	.active-white
@@ -160,6 +145,7 @@ body
 	padding: 10px 30px
 	background-color: #3B3B3B
 	font-size: 17px
+	font-weight: 400
 .blue-text
 	color: #0076FF
 
@@ -534,4 +520,20 @@ h1.service__softlaine_title
 .header-white
 	.head-menu .active::after
 		background-color: #fff
+
+.hamburger, .mobile-buy
+	display: none
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	height: 1px
+
+.twice-news
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	width: 70%
+	.twice-news-items
+		width: 50%
 @import "media" // Always at the end
